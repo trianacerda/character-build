@@ -5,6 +5,7 @@ import Picker from './components/Picker/Picker.jsx';
 function App() {
   const [head, setHead] = useState('');
   const [middle, setMiddle] = useState('');
+  const [bottom, setBottom] = useState('');
   const [newPhrase, setNewPhrase] = useState('');
   const [phrases, setPhrases] = useState('');
 
@@ -22,6 +23,8 @@ function App() {
             onHeadChange={setHead}
             middle={middle}
             onMiddleChange={setMiddle}
+            bottom={bottom}
+            onBottomChange={setBottom}
             newPhrase={newPhrase}
             onNewPhraseChange={setNewPhrase}
             onClick={handleClick}

@@ -6,6 +6,8 @@ export default function Picker({
   onHeadChange,
   middle,
   onMiddleChange,
+  bottom,
+  onBottomChange,
   newPhrase,
   onNewPhraseChange,
   handleClick,
@@ -13,8 +15,10 @@ export default function Picker({
   // const [head, setHead] = useState('');
   // const [middle, setMiddle] = useState('');
 
-  const headPictures = [];
+  const headPictures = ['rip', 'beth', 'john'];
   const middleOptions = [];
+  const bottomOptions = [];
+
   return (
     <>
       <label>
@@ -30,6 +34,15 @@ export default function Picker({
         Middle Options
         <select value={middle} onChange={(e) => onMiddleChange(e.target.value)}>
           {middleOptions.map((option) => (
+            <option key={option}>{option}</option>
+          ))}
+        </select>
+      </label>
+
+      <label>
+        Bottom Options
+        <select value={bottom} onChange={(e) => onBottomChange(e.target.value)}>
+          {bottomOptions.map((option) => (
             <option key={option}>{option}</option>
           ))}
         </select>
