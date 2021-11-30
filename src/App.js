@@ -6,7 +6,7 @@ function App() {
   const [head, setHead] = useState('');
   const [middle, setMiddle] = useState('');
   const [newPhrase, setNewPhrase] = useState('');
-  const [phrase, setPhrase] = useState('');
+  const [phrases, setPhrases] = useState('');
 
   const handleClick = () => {
     setNewPhrase((prevState) => [...prevState, newPhrase]);
