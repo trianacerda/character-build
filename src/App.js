@@ -4,6 +4,7 @@ import Picker from './components/Picker/Picker.jsx';
 
 function App() {
   const [head, setHead] = useState('');
+  const [middle, setMiddle] = useState('');
 
   return (
     <div className="App">
