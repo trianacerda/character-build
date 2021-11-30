@@ -1,7 +1,14 @@
 import React from 'react';
 import { useState } from 'react';
 
-export default function Picker({ head, onHeadChange, middle, onMiddleChange }) {
+export default function Picker({
+  head,
+  onHeadChange,
+  middle,
+  onMiddleChange,
+  newPhrase,
+  onNewPhraseChange,
+}) {
   const [head, setHead] = useState('');
   const [middle, setMiddle] = useState('');
 
@@ -26,6 +33,14 @@ export default function Picker({ head, onHeadChange, middle, onMiddleChange }) {
           ))}
         </select>
       </label>
+
+      <label>
+        Catch Phrase:
+        <input type="text" value={newPhrase} onChange={(e) => onNewPhraseChange(e.target.value)} />
+      </label>
+      <button type="button" onClick={handleClick}>
+        Add your catchphrase!
+      </button>
     </>
   );
 }
