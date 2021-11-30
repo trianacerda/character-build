@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 
-function Picker({ head }) {
+export default function Picker({ head, onHeadChange, middle, onMiddleChange }) {
   const [head, setHead] = useState('');
   const [middle, setMiddle] = useState('');
 
@@ -20,7 +20,7 @@ function Picker({ head }) {
 
       <label>
         Middle Options
-        <select value={middle} onChange={(e) => onHeadChange(e.target.value)}>
+        <select value={middle} onChange={(e) => onMiddleChange(e.target.value)}>
           {middleOptions.map((option) => (
             <option key={option}>{option}</option>
           ))}
@@ -29,5 +29,3 @@ function Picker({ head }) {
     </>
   );
 }
-
-export default Picker;

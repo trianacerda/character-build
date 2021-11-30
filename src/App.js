@@ -10,7 +10,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <h1> Character Builder</h1>
-        <Picker />
+        <Picker head={head} onHeadChange={setHead} middle={middle} onMiddleChange={setMiddle} />
       </header>
     </div>
   );
