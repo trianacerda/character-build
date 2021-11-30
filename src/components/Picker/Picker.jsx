@@ -8,9 +8,10 @@ export default function Picker({
   onMiddleChange,
   newPhrase,
   onNewPhraseChange,
+  handleClick,
 }) {
-  const [head, setHead] = useState('');
-  const [middle, setMiddle] = useState('');
+  // const [head, setHead] = useState('');
+  // const [middle, setMiddle] = useState('');
 
   const headPictures = [];
   const middleOptions = [];

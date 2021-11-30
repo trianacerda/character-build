@@ -8,6 +8,10 @@ function App() {
   const [newPhrase, setNewPhrase] = useState('');
   const [phrase, setPhrase] = useState('');
 
+  const handleClick = () => {
+    setNewPhrase((prevState) => [...prevState, newPhrase]);
+  };
+
   return (
     <div className="App">
       <main>
@@ -20,6 +24,7 @@ function App() {
             onMiddleChange={setMiddle}
             newPhrase={newPhrase}
             onNewPhraseChange={setNewPhrase}
+            onClick={handleClick}
           />
         </header>
       </main>
