@@ -7,7 +7,10 @@ exports[`should render Display element on page 1`] = `
       hey there
     </p>
     <p>
-      yellowstone
+      the yellowstone
+    </p>
+    <p>
+      get to the bunkhouse
     </p>
   </div>
 </div>
