@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render Display element on page 1`] = `
+<div>
+  <div>
+    <p>
+      hey there
+    </p>
+    <p>
+      yellowstone
+    </p>
+  </div>
+</div>
+`;
