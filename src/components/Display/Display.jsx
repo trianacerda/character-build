@@ -2,7 +2,7 @@ export default function Display({ phrases }) {
   return (
     <div>
       {phrases.map((phrase) => (
-        <p>{phrase}</p>
+        <p key="phrase">{phrase}</p>
       ))}
     </div>
   );

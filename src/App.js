@@ -1,16 +1,18 @@
 import './App.css';
 import { useState } from 'react';
 import Picker from './components/Picker/Picker.jsx';
+import Character from './components/Character/Character.jsx';
+import Display from './components/Display/Display.jsx';
 
 function App() {
-  const [head, setHead] = useState('');
-  const [middle, setMiddle] = useState('');
-  const [bottom, setBottom] = useState('');
+  const [head, setHead] = useState('rip');
+  const [middle, setMiddle] = useState('code');
+  const [bottom, setBottom] = useState('mc');
   const [newPhrase, setNewPhrase] = useState('');
-  const [phrases, setPhrases] = useState('');
+  const [phrases, setPhrases] = useState([]);
 
   const handleClick = () => {
-    setNewPhrase((prevState) => [...prevState, newPhrase]);
+    setPhrases((prevState) => [...prevState, newPhrase]);
   };
 
   return (
@@ -26,9 +28,11 @@ function App() {
             bottom={bottom}
             onBottomChange={setBottom}
             newPhrase={newPhrase}
-            onNewPhraseChange={setNewPhrase}
-            onClick={handleClick}
+            setPhrases={setNewPhrase}
+            handleClick={handleClick}
           />
+          <Character phrases={phrases} />
+          <Display head={head} middle={middle} bottom={bottom} phrases={phrases} />
         </header>
       </main>
     </div>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { useState } from 'react';
+// import { useState } from 'react';
 
 export default function Picker({
   head,
@@ -8,16 +8,13 @@ export default function Picker({
   onMiddleChange,
   bottom,
   onBottomChange,
-  newPhrase,
-  onNewPhraseChange,
+  phrases,
+  setPhrases,
   handleClick,
 }) {
-  // const [head, setHead] = useState('');
-  // const [middle, setMiddle] = useState('');
-
   const headPictures = ['rip', 'beth', 'john'];
-  const middleOptions = [];
-  const bottomOptions = [];
+  const middleOptions = ['cowboy', 'code'];
+  const bottomOptions = ['cowboy', 'rainbow', 'mc'];
 
   return (
     <>
@@ -50,7 +47,7 @@ export default function Picker({
 
       <label>
         Catch Phrase:
-        <input type="text" value={newPhrase} onChange={(e) => onNewPhraseChange(e.target.value)} />
+        <input type="text" value={phrases} onChange={(e) => setPhrases(e.target.value)} />
       </label>
       <button type="button" onClick={handleClick}>
         Add your catchphrase!

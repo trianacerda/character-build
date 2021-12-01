@@ -1,4 +1,4 @@
-export default function Character({ head, middle }) {
+export default function Character({ head, middle, bottom }) {
   return (
     <section style={{ display: 'flex', flexDirection: 'column' }}>
       <article
@@ -13,9 +13,20 @@ export default function Character({ head, middle }) {
       ></article>
 
       <article
-        className="head"
+        className="middle"
         style={{
           backgroundImage: `url(./${middle}-middle.png)`,
+          height: 100,
+          width: 150,
+          backgroundSize: 'cover',
+          backgroundRepeat: 'no-repeat',
+        }}
+      ></article>
+
+      <article
+        className="bottom"
+        style={{
+          backgroundImage: `url(./${bottom}-bottom.png)`,
           height: 100,
           width: 150,
           backgroundSize: 'cover',
