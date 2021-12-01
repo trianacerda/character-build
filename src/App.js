@@ -32,7 +32,7 @@ function App() {
             handleClick={handleClick}
           />
           <Display phrases={phrases} />
-          <Character head={head} middle={middle} bottom={bottom} phrases={phrases} />
+          <Character head={head} middle={middle} bottom={bottom} />
         </header>
       </main>
     </div>
