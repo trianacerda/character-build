@@ -5,8 +5,8 @@ export default function Character({ head, middle, bottom }) {
         className="head"
         style={{
           backgroundImage: `url(./${head}-head.png)`,
-          height: 100,
-          width: 150,
+          height: 200,
+          width: 200,
           backgroundSize: 'cover',
           backgroundRepeat: 'no-repeat',
         }}
@@ -16,8 +16,8 @@ export default function Character({ head, middle, bottom }) {
         className="middle"
         style={{
           backgroundImage: `url(./${middle}-middle.png)`,
-          height: 100,
-          width: 150,
+          height: 200,
+          width: 200,
           backgroundSize: 'cover',
           backgroundRepeat: 'no-repeat',
         }}
@@ -27,8 +27,8 @@ export default function Character({ head, middle, bottom }) {
         className="bottom"
         style={{
           backgroundImage: `url(./${bottom}-bottom.png)`,
-          height: 100,
-          width: 150,
+          height: 200,
+          width: 200,
           backgroundSize: 'cover',
           backgroundRepeat: 'no-repeat',
         }}

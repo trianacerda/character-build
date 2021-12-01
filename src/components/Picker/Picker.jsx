@@ -12,9 +12,9 @@ export default function Picker({
   setPhrases,
   handleClick,
 }) {
-  const headPictures = ['rip', 'beth', 'john'];
-  const middleOptions = ['cowboy', 'code'];
-  const bottomOptions = ['cowboy', 'rainbow', 'mc'];
+  const headPictures = ['rip', 'beth', 'john', 'triana'];
+  const middleOptions = ['cowboy', 'code', 'hoodie', 'kobe'];
+  const bottomOptions = ['cowboy', 'rainbow', 'mc', 'gummybear'];
 
   return (
     <>

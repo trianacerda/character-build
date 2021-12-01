@@ -31,8 +31,8 @@ function App() {
             setPhrases={setNewPhrase}
             handleClick={handleClick}
           />
-          <Character phrases={phrases} />
-          <Display head={head} middle={middle} bottom={bottom} phrases={phrases} />
+          <Display phrases={phrases} />
+          <Character head={head} middle={middle} bottom={bottom} phrases={phrases} />
         </header>
       </main>
     </div>
