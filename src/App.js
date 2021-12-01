@@ -4,7 +4,7 @@ import Picker from './components/Picker/Picker.jsx';
 import Character from './components/Character/Character.jsx';
 import Display from './components/Display/Display.jsx';
 
-function App() {
+export default function App() {
   const [head, setHead] = useState('rip');
   const [middle, setMiddle] = useState('code');
   const [bottom, setBottom] = useState('mc');
@@ -38,5 +38,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
